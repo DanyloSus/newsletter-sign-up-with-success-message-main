@@ -6,9 +6,9 @@ const Index = () => {
   console.log(email);
 
   return (
-    <main className="w-[35.4167%] h-[50%] bg-white rounded-3xl flex flex-col items-start p-[64px] gap-7 overflow-hidden text-grey shadow-xl">
+    <main className="w-[35.4167%] h-[50%] bg-white rounded-3xl flex flex-col items-start p-[64px] gap-7 overflow-hidden text-grey shadow-xl md:w-screen md:min-h-screen md:rounded-none md:px-6 md:pt-[148px] md:pb-10 md:justify-start img-anim">
       <img src="./icon-success.svg" alt="icon success" />
-      <h1 className=" leading-[60px]">Thanks for subscribing!</h1>
+      <h1 className=" leading-[60px] md:leading-10">Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to{" "}
         <span className="text-dark-slate-grey font-bold">{email}</span>. Please
@@ -20,6 +20,7 @@ const Index = () => {
 
           push("./");
         }}
+        className="md:mt-auto"
       >
         Dismiss message
       </button>

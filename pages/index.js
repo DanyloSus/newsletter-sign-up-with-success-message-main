@@ -8,7 +8,7 @@ const Index = () => {
 
   return (
     <main>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 text-anim">
         <h1>Stay updated!</h1>
         <p className="">
           Join 60,000+ product managers receiving monthly updates on:
@@ -29,7 +29,9 @@ const Index = () => {
         </ul>
         <form className="flex flex-col gap-3" onSubmit={checkEmail}>
           <div className="flex justify-between">
-            <p className="text-dark-slate-grey text-xs">Email address</p>
+            <p className="text-dark-slate-grey text-xs font-bold">
+              Email address
+            </p>
             <p
               className="text-tomato text-xs relative -bottom-10 opacity-0 transition-all ease-in-out duration-500"
               id="error"
@@ -48,10 +50,16 @@ const Index = () => {
           <input value="Subscribe to monthly newsletter" type="submit" />
         </form>
       </div>
-      <div>
+      <div className="md:w-screen md:flex md:items-center md:justify-center img-anim">
         <img
           src="./illustration-sign-up-desktop.svg"
           alt="illustration sign up desktop"
+          className="md:hidden"
+        />
+        <img
+          src="./illustration-sign-up-mobile.svg"
+          alt="illustration sign up mobile"
+          className="md:block hidden relative top-0 -left-0 md:min-w-screen"
         />
       </div>
     </main>

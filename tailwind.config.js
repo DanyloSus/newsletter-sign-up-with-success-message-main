@@ -15,6 +15,12 @@ module.exports = {
         grey: "hsl(231, 7%, 60%)",
         white: "hsl(0, 0%, 100%)",
       },
+      screens: {
+        md: { max: "768px" },
+      },
+      spacing: {
+        imgTop: "calc(100wh+24px)",
+      },
     },
   },
   plugins: [],

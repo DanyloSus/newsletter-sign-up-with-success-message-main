@@ -14,13 +14,33 @@
     @apply mr-3 rounded-full;
   }
   main {
-    @apply w-[62.5%] h-[58,3333%] bg-white rounded-3xl flex items-center justify-between py-6 pr-6 pl-[64px] gap-[64px] overflow-hidden text-grey;
+    @apply w-[62.5%] h-[58,3333%] bg-white rounded-3xl flex items-center justify-between py-6 pr-6 pl-[64px] gap-[64px] overflow-hidden text-grey md:flex-col-reverse md:w-screen md:min-h-screen md:px-6 md:pt-0 md:pb-10 md:rounded-none md:justify-end;
   }
   main h1 {
-    @apply text-dark-slate-grey text-[54px] font-bold -mb-2;
+    @apply text-dark-slate-grey text-[54px] font-bold -mb-2 md:text-4xl;
   }
   main input[type=submit],
   main button {
     @apply bg-dark-slate-grey text-white font-bold w-full py-3 rounded-lg mt-2 cursor-pointer;
+  }
+}
+.img-anim {
+  animation: anim 1.5s ease-in-out 0s both;
+}
+
+.text-anim {
+  animation: anim 1.5s ease-in-out 0.75s both;
+}
+
+@keyframes anim {
+  0% {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */
